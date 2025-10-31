@@ -790,7 +790,7 @@
                 </div>
                 <div class="content">
                   <h4>Location</h4>
-                  <p>Riyadh, Riyadh, Saudi Arabia</p>
+                  <p>Al Souweidi Al Aam, As Suwaidi, Riyadh 11411</p>
                 </div>
               </div>
 
@@ -900,7 +900,7 @@
       const message = (form.querySelector('[name="message"]') || {}).value || '';
 
       if (subject) text += `Subject: ${subject}\n`;
-      if (message) text += `Message: ${message}\n`;
+      if (message) text += `Message: ${message}`;
 
       const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
       window.open(url, '_blank');
